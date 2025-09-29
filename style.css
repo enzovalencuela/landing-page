@@ -7,11 +7,10 @@
   margin-left: 60px;
   margin-top: 50px;
 }
-#menusuperior video {
+#menusuperior img {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-
   width: 100%;
 }
 
