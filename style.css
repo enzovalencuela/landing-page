@@ -7,13 +7,12 @@
   margin-left: 60px;
   margin-top: 50px;
 }
-#menusuperior {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://www.microlins.com.br/media/magefan_blog/shutterstock_2204212039_1_.jpg);
-  background-position: center;
+#menusuperior video {
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  color: aliceblue;
+
+  width: 100%;
 }
 
 #titulo-menusuperior {
@@ -38,9 +37,11 @@
   padding: 25px;
 }
 #sessaovideo {
-  display: grid;
-  grid-auto-flow: column;
-  columns: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 560px;
 }
 #video {
   width: 502px;
@@ -52,11 +53,11 @@
   align-items: center;
 }
 #titulovideo {
-  color: #247ba0;
+  color: #24a02e;
   margin-top: 50px;
 }
 #carrosel {
-  background-color: #247ba0;
+  background-color: #24a03f;
   padding: 80px 50px;
 }
 #titulo-carrosel {
@@ -66,7 +67,7 @@
   padding-bottom: 30px;
 }
 .swiper {
-  padding-bottom: 20px;
+  padding-bottom: 28px;
 }
 .swiper-slide {
   display: flex;
@@ -81,9 +82,10 @@
     max-height: 180px;
   }
 }
+
 #formulario {
   text-align: center;
-  padding-bottom: 50px;
+  padding-block: 150px;
 }
 #titulo-formulario {
   font-size: 25px;
@@ -106,7 +108,7 @@ button {
   border: 0;
   cursor: pointer;
   will-change: box-shadow, transform;
-  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  background: radial-gradient(100% 100% at 100% 0%, #68d258 0%, #0b9841 100%);
   box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
     0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
     inset 0px -0.01em 0px rgb(58 65 111 / 50%);
@@ -122,13 +124,17 @@ button {
 
 button:hover {
   box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%),
-    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3ce055;
   transform: translateY(-0.1em);
 }
 
 button:active {
-  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  box-shadow: inset 0px 0.1em 0.6em #3ce04f;
   transform: translateY(0em);
+}
+
+#informativo {
+  width: 100%;
 }
 
 @media (max-width: 938px) {
@@ -137,12 +143,7 @@ button:active {
     margin-left: 0px;
     margin-top: 30px;
   }
-  #menusuperior {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    padding: 0 20px;
-  }
+
   #titulo-menusuperior {
     margin-left: 0px;
   }
@@ -185,6 +186,6 @@ button:active {
     margin-top: 0px;
   }
   .swiper-slide img {
-    max-height: 140px;
+    max-height: 120px;
   }
 }
