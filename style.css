@@ -1,0 +1,190 @@
+* {
+  margin: 0px;
+  font-family: "inter";
+}
+#logo {
+  width: 200px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+#menusuperior {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://www.microlins.com.br/media/magefan_blog/shutterstock_2204212039_1_.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+#titulo-menusuperior {
+  margin-left: 150px;
+  margin-top: 50px;
+}
+#texto-menusuperior {
+  margin-left: 150px;
+  margin-top: 35px;
+  padding-bottom: 100px;
+}
+#menuinformacional {
+  background-color: #eae5ea;
+  display: grid;
+  grid-auto-flow: column;
+  columns: auto;
+}
+.icone {
+  width: 50px;
+  height: 50px;
+  margin: 50px 0px 50px 100px;
+  padding: 25px;
+}
+#sessaovideo {
+  display: grid;
+  grid-auto-flow: column;
+  columns: auto;
+}
+#video {
+  width: 502px;
+  aspect-ratio: 16/9;
+  margin: 50px 25px 50px 100px;
+}
+.textoinformativo {
+  display: flex;
+  align-items: center;
+}
+#titulovideo {
+  color: #247ba0;
+  margin-top: 50px;
+}
+#carrosel {
+  background-color: #247ba0;
+  padding: 80px 50px;
+}
+#titulo-carrosel {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.swiper {
+  padding-bottom: 20px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    aspect-ratio: 5/2;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    max-height: 180px;
+  }
+}
+#formulario {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#titulo-formulario {
+  font-size: 25px;
+  margin: 25px;
+  color: #383838;
+}
+input {
+  width: 300px;
+  height: 40px;
+  background-color: #eaece5;
+  margin: 15px;
+  border: 0px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+button {
+  font-size: 13px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+    inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  margin: 15px;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+button:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%),
+    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+button:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+
+@media (max-width: 938px) {
+  #logo {
+    width: 100px;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  #menusuperior {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 0 20px;
+  }
+  #titulo-menusuperior {
+    margin-left: 0px;
+  }
+  #texto-menusuperior {
+    margin-left: 0px;
+  }
+  #menuinformacional {
+    grid-auto-flow: unset;
+    columns: auto;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .icone {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    padding: 15px;
+  }
+  #sessaovideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 20px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  #video {
+    margin: 30px 20px;
+    width: 100%;
+    min-height: 228px;
+  }
+  #titulovideo {
+    margin-top: 0px;
+  }
+  .swiper-slide img {
+    max-height: 140px;
+  }
+}
